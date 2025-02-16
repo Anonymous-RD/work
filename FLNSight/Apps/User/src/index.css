@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    @keyframes slideDownAndFade {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @keyframes slideUpAndFade {
+      from {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      to {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+    }
+  
+    .animate-slideDownAndFade {
+      animation: slideDownAndFade 200ms ease-out;
+    }
+  
+    .animate-slideUpAndFade {
+      animation: slideUpAndFade 200ms ease-out;
+    }
+  }

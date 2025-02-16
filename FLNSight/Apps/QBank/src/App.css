@@ -1,0 +1,49 @@
+/* body {
+  font-family: "Kumbh Sans";
+  font-weight: 100;
+} */
+/* HTML: <div class="loader"></div> */
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 48%;
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #0000;
+  border-right-color: #ffa50097;
+  animation: l24 1s infinite linear;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: inherit;
+  animation: inherit;
+  animation-duration: 2s;
+}
+.loader:after {
+  animation-duration: 4s;
+}
+@keyframes l24 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+
+.wrapper + div{
+  display: none;
+}
+
+.jodit-container{
+  border: 1px solid #f5f5f5 !important;
+  border-radius: 10px !important;
+}

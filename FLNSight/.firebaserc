@@ -1,0 +1,31 @@
+{
+  "projects": {
+    "default": "firecmsdemo"
+  },
+  "targets": {
+    "firecmsdemo": {
+      "hosting": {
+        "auth-fln": [
+          "auth-fln"
+        ],
+        "assessment-fln": [
+          "assessment-fln"
+        ],
+        "user-fln": [
+          "user-fln"
+        ],
+        "qbank-fln": [
+          "qbank-fln"
+        ],
+        "settings-fln": [
+          "settings-fln"
+        ],
+        "schools-fln": [
+          "schools-fln"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

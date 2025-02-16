@@ -1,0 +1,56 @@
+2025-01-03T06:59:19.901Z [32minfo[39m: Auth middleware configured.
+2025-01-03T06:59:19.908Z [32minfo[39m: Server running on port 5000
+2025-01-03T06:59:21.526Z [32minfo[39m: MongoDB connected successfully
+2025-01-03T07:02:01.207Z [31merror[39m: User not found
+2025-01-03T07:03:19.726Z [31merror[39m: User not found
+2025-01-03T07:03:45.319Z [31merror[39m: User not found
+2025-01-03T07:04:50.521Z [32minfo[39m: Auth middleware configured.
+2025-01-03T07:04:50.529Z [32minfo[39m: Server running on port 5000
+2025-01-03T07:04:51.700Z [32minfo[39m: MongoDB connected successfully
+2025-01-03T07:05:00.098Z [31merror[39m: User not found
+2025-01-03T07:05:28.950Z [32minfo[39m: User with username rohit logged in successfully.
+2025-01-03T07:09:07.486Z [32minfo[39m: All users listed on page 1: 
+2025-01-03T07:15:58.759Z [32minfo[39m: Auth middleware configured.
+2025-01-03T07:15:58.766Z [32minfo[39m: Server running on port 5000
+2025-01-03T07:16:00.224Z [32minfo[39m: MongoDB connected successfully
+2025-01-03T07:25:26.184Z [31merror[39m: Valid id required.
+2025-01-03T07:25:27.882Z [31merror[39m: Valid id required.
+2025-01-03T07:29:29.977Z [32minfo[39m: All users listed on page 1: 
+2025-01-03T07:30:21.918Z [32minfo[39m: Assessment List retrieved for page 1.
+2025-01-03T07:30:37.157Z [32minfo[39m: Assessment List retrieved for page 1.
+2025-01-03T07:32:40.893Z [33mwarn[39m: Malicious content detected in field: functionalPermissionToDelete[0]
+2025-01-03T08:59:09.851Z [32minfo[39m: Auth middleware configured.
+2025-01-03T08:59:09.858Z [32minfo[39m: Server running on port 5000
+2025-01-03T08:59:11.111Z [32minfo[39m: MongoDB connected successfully
+2025-01-03T08:59:12.435Z [32minfo[39m: Auth middleware configured.
+2025-01-03T08:59:12.442Z [32minfo[39m: Server running on port 5000
+2025-01-03T08:59:13.678Z [32minfo[39m: MongoDB connected successfully
+2025-01-03T09:40:37.077Z [32minfo[39m: Assessment List retrieved for page 1.
+2025-01-03T09:40:44.965Z [32minfo[39m: All users listed on page 1: 
+2025-01-03T10:06:35.733Z [33mwarn[39m: No items found.
+2025-01-03T10:06:37.097Z [33mwarn[39m: No items found.
+2025-01-03T10:09:03.550Z [32minfo[39m: Vendors Status for user 677771fd78dabc20ddfd0df0
+2025-01-03T10:47:54.271Z [31merror[39m: User 605c72b8e935f56f9a7b591b is invalid.
+2025-01-03T10:47:57.618Z [31merror[39m: User 605c72b8e935f56f9a7b591b is invalid.
+2025-01-03T10:47:58.956Z [31merror[39m: User 605c72b8e935f56f9a7b591b is invalid.
+2025-01-03T10:49:58.849Z [32minfo[39m: Auth middleware configured.
+2025-01-03T10:49:58.855Z [32minfo[39m: Server running on port 5000
+2025-01-03T10:50:00.276Z [32minfo[39m: MongoDB connected successfully
+2025-01-03T10:50:25.545Z [31merror[39m: User not found
+2025-01-03T10:50:27.834Z [31merror[39m: User not found
+2025-01-03T10:50:52.109Z [32minfo[39m: User with username rohit logged in successfully.
+2025-01-03T10:51:38.251Z [32minfo[39m: Question Bank Status for user 677771fd78dabc20ddfd0df0
+2025-01-03T10:51:40.876Z [32minfo[39m: Question Bank Status for user 677771fd78dabc20ddfd0df0
+2025-01-03T10:52:36.810Z [32minfo[39m: Vendors retrieved for page 1.
+2025-01-03T10:52:50.489Z [32minfo[39m: Vendors retrieved for page 1.
+2025-01-03T10:53:25.731Z [32minfo[39m: Vendors retrieved for page 1.
+2025-01-03T10:54:32.385Z [32minfo[39m: RTT List retrieved for page 1.
+2025-01-03T10:54:35.341Z [32minfo[39m: RTT List retrieved for page 1.
+2025-01-03T10:55:08.037Z [32minfo[39m: RTT List retrieved for page 1.
+2025-01-03T11:04:09.916Z [32minfo[39m: Creating questionbank for 677771fd78dabc20ddfd0df0.
+2025-01-03T11:04:09.918Z [32minfo[39m: Failed to create QuestionBank. Error: "questionList" should be an array of objects
+2025-01-03T11:04:09.919Z [31merror[39m: Failed to create Questionbank. Error :"questionList" should be an array of objects.
+2025-01-03T11:05:02.711Z [32minfo[39m: Creating questionbank for 677771fd78dabc20ddfd0df0.
+2025-01-03T11:05:02.712Z [32minfo[39m: Failed to create QuestionBank. Error: "questionList" should be an array of objects
+2025-01-03T11:05:02.712Z [31merror[39m: Failed to create Questionbank. Error :"questionList" should be an array of objects.
+2025-01-03T11:15:25.967Z [31merror[39m: User ID 60d9c6b9b60b9e001f120b4d is invalid.

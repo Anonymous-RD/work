@@ -1,0 +1,82 @@
+{
+  "headers": [
+    {
+      "source": "/**",
+      "headers": [
+        {
+          "key": "Set-Cookie",
+          "value": "HttpOnly; Secure; SameSite=None"
+        }
+      ]
+    }
+  ],
+  "hosting": [
+    {
+      "target": "auth-fln",
+      "public": "Apps/Auth/dist",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "assessment-fln",
+      "public": "Apps/Survey/dist",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "user-fln",
+      "public": "Apps/User/dist",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+
+    {
+      "target": "qbank-fln",
+      "public": "Apps/QBank/dist",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "settings-fln",
+      "public": "Apps/Settings/dist",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "schools-fln",
+      "public": "Apps/Schools/dist",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
