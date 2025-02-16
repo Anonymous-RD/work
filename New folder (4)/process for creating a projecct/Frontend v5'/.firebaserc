@@ -1,0 +1,22 @@
+{
+  "projects": {
+    "default": "firecmsdemo"
+  },
+  "targets": {
+    "firecmsdemo": {
+      "hosting": {
+        "auth-fln": [
+          "auth-fln"
+        ],
+        "survey-fln": [
+          "survey-fln"
+        ],
+        "user-fln": [
+          "user-fln"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

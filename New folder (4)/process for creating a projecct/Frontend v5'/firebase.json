@@ -1,0 +1,48 @@
+{
+  "headers": [
+    {
+      "source": "/**",
+      "headers": [
+        {
+          "key": "Set-Cookie",
+          "value": "HttpOnly; Secure; SameSite=None"
+        }
+      ]
+    }
+  ],
+  "hosting": [
+    {
+      "target": "auth-fln",
+      "public": "Apps/Auth/dist",
+      "ignore": [ "firebase.json", "**/.*", "**/node_modules/**" ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "survey-fln",
+      "public": "Apps/Survey/dist",
+      "ignore": [ "firebase.json", "**/.*", "**/node_modules/**" ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "user-fln",
+      "public": "Apps/User/dist",
+      "ignore": [ "firebase.json", "**/.*", "**/node_modules/**" ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

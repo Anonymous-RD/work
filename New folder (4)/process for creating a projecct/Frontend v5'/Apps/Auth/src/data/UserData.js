@@ -1,0 +1,60 @@
+// data.js
+export const userData = [
+  {
+    id: 1,
+    username: "User A",
+    email: "example@email.com",
+    phone: "0000000000",
+    role: "Role1",
+    approvalStatus: "Pending",
+  },
+  {
+    id: 2,
+    username: "User B",
+    email: "example@email.com",
+    phone: "0000000000",
+    role: "Role1",
+    approvalStatus: "Rejected",
+  },
+  {
+    id: 3,
+    username: "User C",
+    email: "example@email.com",
+    phone: "0000000000",
+    role: "Role1",
+    approvalStatus: "Rejected",
+  },
+  {
+    id: 4,
+    username: "Teacher A",
+    email: "example@email.com",
+    phone: "0000000000",
+    role: "Role2",
+    approvalStatus: "Approved",
+  },
+  {
+    id: 5,
+    username: "Teacher B",
+    email: "example5@email.com",
+    phone: "0000000000",
+    role: "Role1",
+    approvalStatus: "Rejected",
+  },
+  {
+    id: 6,
+    username: "Teacher C",
+    email: "example@email.com",
+    phone: "987654321",
+    role: "Role1",
+    approvalStatus: "Rejected",
+  },
+  {
+    id: 7,
+    username: "Teacher C",
+    email: "example@email.com",
+    phone: "987654321",
+    role: "Role2",
+    approvalStatus: "Rejected",
+  },
+  // More data...
+];
