@@ -1,0 +1,106 @@
+import React, { useEffect, useRef, useState } from "react";
+import { IoEllipsisVertical } from "react-icons/io5";
+
+const SurveyCard = ({ survey, onView, onDelete, onEdit }) => {
+  const [showMenu, setShowMenu] = useState(false);
+  const menuRef = useRef(null);
+
+  const getStatusColor = (status) => {
+    switch (status) {
+      case "Draft":
+        return "bg-orange-100 text-orange-600";
+      case "Published":
+        return "bg-green-100 text-green-600";
+      case "Closed":
+        return "bg-red-100 text-red-600";
+      default:
+        return "";
+    }
+  };
+
+  // Close menu when clicked outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShowMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  return (
+    <div className="bg-[#F5F5F5] rounded-[16px] relative flex flex-col">
+      <div className="flex justify-between items-center mb-2">
+        <span className="p-4">
+          <h3 className="text-lg font-medium text-[#1B212D]">{survey.name}</h3>
+          {survey.status === "Published" && (
+              <p
+                type="button"
+                onClick={() => {
+                  navigator.clipboard.writeText(`http://localhost:5175/${survey._id}`);
+                  alert("Survey URL copied to clipboard!");
+                }}
+                className="px-3 py-1 bg-sky-900 text-white text-sm font-semibold rounded-xl"
+              >
+                Copy URL
+              </p>
+            )}
+        </span>
+        <button
+          onClick={() => setShowMenu(!showMenu)}
+          className="relative  text-gray-400 hover:text-gray-600"
+        >
+          <div className="p-4">
+            {" "}
+            <IoEllipsisVertical size={18} />
+          </div>
+        </button>
+        {showMenu && (
+          <div
+            ref={menuRef}
+            className="absolute  items-start justify-items-start	 top-10 right-6 bg-white border rounded-[16px] w-24 z-10"
+          >
+            <button
+              className="block text-left w-full px-2 py-2 text-sm text-gray-600 hover:bg-gray-100"
+              onClick={() => onEdit(survey._id)}
+            >
+              Edit
+            </button>
+
+            {/* Horizontal Rule */}
+            <hr className="border-gray-300 opacity-[0.5] w-full" />
+
+            <button className="block text-left w-full px-2 py-2 text-sm text-gray-600 hover:bg-gray-100" onClick={() => onDelete(survey._id)}>
+              Delete
+            </button>
+          </div>
+        )}
+      </div>
+
+      <hr className="border-[#131826] opacity-[0.1]" />
+      <div className="flex justify-between p-4">
+        <div className="mb-2">
+          <p className="text-xs text-[#ADA9B4] font-medium pb-2">SUBMISSIONS</p>
+          <div className="flex flex-row justify-between">
+            <p className="text-2xl font-bold text-[#161619] h-8">
+              {survey.submissions}
+            </p>
+          </div>
+        </div>
+        <div className="mt-[16px] h-8 bg-[#D9FFE9] rounded">
+          <span
+            className={`px-3 py-1 text-sm font-medium rounded ${getStatusColor(
+              survey.status
+            )}`}
+          >
+            {survey.status}
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SurveyCard;

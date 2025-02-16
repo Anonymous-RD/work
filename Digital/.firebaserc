@@ -1,0 +1,28 @@
+{
+  "projects": {
+    "default": "styletrends-5dc20"
+  },
+  "targets": {
+    "styletrends-5dc20": {
+      "hosting": {
+        "auth-ipel": [
+          "auth-ipel"
+        ],
+         "user-ipel": [
+          "user-ipel"
+        ],
+        "survey-ipel": [
+          "survey-ipel"
+        ],
+        "tracker-ipel": [
+          "tracker-ipel"
+        ],
+        "cms-ipel": [
+          "cms-ipel"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
